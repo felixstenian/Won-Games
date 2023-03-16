@@ -9,7 +9,6 @@ describe('<Button />', () => {
     const { container } = renderWithTheme(<Button>Buy now</Button>)
 
     expect(screen.getByRole('button', { name: /Buy now/i })).toBeInTheDocument()
-
     expect(container.firstChild).toMatchSnapshot()
   })
 })

@@ -16,6 +16,6 @@ exports[`<Heading /> 1. should render the reading 1`] = `
   class="c0"
   color="white"
 >
-  Heading
+  Won Games
 </h2>
 `;

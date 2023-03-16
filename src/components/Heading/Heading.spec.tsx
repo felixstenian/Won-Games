@@ -7,9 +7,11 @@ import Heading from '.'
 
 describe('<Heading />', () => {
   it('1. should render the reading', () => {
-    const { container } = renderWithTheme(<Heading>Heading</Heading>)
+    const { container } = renderWithTheme(<Heading>Won Games</Heading>)
 
-    expect(screen.getAllByText(/Heading/i))
+    expect(
+      screen.getByRole('heading', { name: /Won Games/i })
+    ).toBeInTheDocument()
     expect(container.firstChild).toMatchSnapshot()
   }),
     it('2. should render a white heading by default', () => {
