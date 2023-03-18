@@ -5,7 +5,7 @@ export type ButtonProps = {
   size?: 'small' | 'medium' | 'large'
 }
 
-const Button = ({ children, size }: ButtonProps) => (
+const Button = ({ children, size = 'medium' }: ButtonProps) => (
   <Style.Wrapper size={size}>
     {!!children && <span>{children}</span>}
   </Style.Wrapper>
