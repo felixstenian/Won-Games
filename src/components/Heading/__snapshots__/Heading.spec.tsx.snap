@@ -2,8 +2,8 @@
 
 exports[`<Heading /> 1. should render the reading 1`] = `
 .c0 {
-  font-size: 2.0rem;
   color: #FAFAFA;
+  font-size: 2.0rem;
 }
 
 @media (min-width:768px) {
