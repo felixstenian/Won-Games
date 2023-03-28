@@ -1,7 +1,8 @@
 import { fireEvent, screen } from '@testing-library/react'
 
-import Menu from '.'
 import { renderWithTheme } from 'utils'
+
+import Menu from '.'
 
 describe('<Menu />', () => {
   it('1. should render the menu', () => {
