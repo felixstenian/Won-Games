@@ -6,7 +6,9 @@ import Footer from '.'
 
 describe('<Footer />', () => {
   it('1. should render the reading', () => {
-    const { container } = renderWithTheme(<Footer />)
+    const { container } = renderWithTheme(
+      <Footer data-testid="footer-wrapper" />
+    )
 
     expect(screen.getByTestId('footer-wrapper')).toBeInTheDocument()
     expect(screen.getByLabelText(/Won Games/i)).toBeInTheDocument()
@@ -15,6 +17,7 @@ describe('<Footer />', () => {
   })
   it('2. should render 4 column topics and CopyRight', () => {
     renderWithTheme(<Footer />)
+    const currentYear = new Date().getFullYear() || 2023
 
     expect(
       screen.getByRole('heading', { name: /Contact/i })
@@ -26,6 +29,6 @@ describe('<Footer />', () => {
     expect(
       screen.getByRole('heading', { name: /Location/i })
     ).toBeInTheDocument()
-    expect(screen.getByTestId('copyright')).toBeInTheDocument()
+    expect(screen.getByText(`Won Games ${currentYear} @ All rights reserved`))
   })
 })

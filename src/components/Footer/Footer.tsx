@@ -1,11 +1,14 @@
+import { HTMLAttributes } from 'react'
 import Link from 'next/link'
 
 import { Heading, Logo } from 'components'
 
 import * as Style from './styles'
 
-const Footer = () => (
-  <Style.Wrapper data-testid="footer-wrapper">
+type FooterTypes = HTMLAttributes<HTMLElement>
+
+const Footer = (props: FooterTypes) => (
+  <Style.Wrapper {...props}>
     <Logo color="black" />
     <Style.Content>
       <Style.Column>
@@ -82,7 +85,7 @@ const Footer = () => (
         <span>Loren ipsun.</span>
       </Style.Column>
     </Style.Content>
-    <Style.CopyRight data-testid="copyright">
+    <Style.CopyRight>
       Won Games {new Date().getFullYear() || 2023} @ All rights reserved
     </Style.CopyRight>
   </Style.Wrapper>
