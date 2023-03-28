@@ -3,14 +3,18 @@
 exports[`<Button /> 1. should render the reading 1`] = `
 .c0 {
   background: linear-gradient(180deg,#ff5f5f 0%,#f062c0 50%);
-  color: #FAFAFA;
   border: 0;
+  cursor: pointer;
+  color: #FAFAFA;
   border-radius: 0.4rem;
   padding: 0.8rem;
-  cursor: pointer;
   height: 4rem;
   font-size: 1.4rem;
   padding: 0.8rem 3.2rem;
+}
+
+.c0:hover {
+  background: linear-gradient(180deg,#e35565 0%,#d958a6 50%);
 }
 
 <button
