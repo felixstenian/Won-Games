@@ -18,7 +18,7 @@ export const Content = styled.div`
   `}
 
   ${media.greaterThan('medium')`
-  grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   `}
 `
 
@@ -32,7 +32,7 @@ export const Column = styled.div`
       margin-bottom: ${theme.spacings.xxsmall};
       font-size: ${theme.font.sizes.small};
     }
-    A:hover {
+    a:hover {
       text-decoration: underline;
     }
   `}

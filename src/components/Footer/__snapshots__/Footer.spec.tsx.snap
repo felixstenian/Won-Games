@@ -48,7 +48,7 @@ exports[`<Footer /> 1. should render the reading 1`] = `
   font-size: 1.4rem;
 }
 
-.c3 A:hover {
+.c3 a:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
