@@ -29,8 +29,23 @@ describe('<Banner />', () => {
 
     expect(container.firstChild).toMatchSnapshot()
   })
+  it('1. should render the reading', () => {
+    renderWithTheme(
+      <Banner
+        ribbon="My Ribbon"
+        ribbonSize="small"
+        ribbonColor="secondary"
+        {...props}
+      />
+    )
 
-  // verificar se o titulo existe e está sendo renderizado
-  // verificar se o sub titulo existe e está sendo renderizado
-  // verificar se a imagem existe e está sendo renderizado
+    const myRibbon = screen.getByText(/My ribbon/i)
+
+    expect(myRibbon).toBeInTheDocument()
+    expect(myRibbon).toHaveStyle({
+      backgroundColor: '#3CD3C1',
+      height: '2.6rem',
+      fontSize: '1.2rem'
+    })
+  })
 })

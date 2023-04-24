@@ -67,6 +67,10 @@ exports[`<Banner /> 1. should render the reading 1`] = `
   font-weight: 600;
 }
 
+@media (max-width:1170px) {
+
+}
+
 @media (min-width:768px) {
   .c0 {
     box-shadow: 0 0.4rem 0.5rem 0 rgba(0,0,0,0.2);
@@ -104,12 +108,14 @@ exports[`<Banner /> 1. should render the reading 1`] = `
 <div
   class="c0"
 >
-  <div
-    aria-label="Defy death"
-    class="c1"
-    role="img"
-    src="https://source.unsplash.com/user/willianjusten/1042x580"
-  />
+  <figure>
+    <div
+      aria-label="Defy death"
+      class="c1"
+      role="img"
+      src="https://source.unsplash.com/user/willianjusten/1042x580"
+    />
+  </figure>
   <div
     class="c2"
   >
