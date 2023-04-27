@@ -5,7 +5,7 @@ import { Heading, Logo } from 'components'
 
 import * as Style from './styles'
 
-type FooterTypes = HTMLAttributes<HTMLElement>
+export type FooterTypes = HTMLAttributes<HTMLElement>
 
 const Footer = (props: FooterTypes) => (
   <Style.Wrapper {...props}>
